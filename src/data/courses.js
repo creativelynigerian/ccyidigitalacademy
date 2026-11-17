@@ -1,0 +1,180 @@
+export const courses = [
+  {
+    id: 'tier-1',
+    tier: 1,
+    title: 'Introduction to Computers & Microsoft Office',
+    subtitle: 'Digital Foundations',
+    tagline: 'Digital literacy and office productivity',
+    level: 'Beginner',
+    duration: '4–6 Weeks',
+    color: 'blue',
+    icon: 'Monitor',
+    description:
+      'Equip yourself with essential computer skills and the ability to use Microsoft Office applications for academic, personal and professional productivity.',
+    objectives: [
+      'Understand computer hardware and software fundamentals',
+      'Navigate the Windows operating system confidently',
+      'Create professional documents with Microsoft Word',
+      'Build spreadsheets and perform calculations with Microsoft Excel',
+      'Design engaging presentations with Microsoft PowerPoint',
+      'Use email and the internet safely and effectively',
+    ],
+    modules: [
+      { num: 1, topic: 'Introduction to Computers', activity: 'Identify computer components' },
+      { num: 2, topic: 'Computer Hardware & Software', activity: 'Explore operating systems' },
+      { num: 3, topic: 'Using Windows', activity: 'File and folder management' },
+      { num: 4, topic: 'Keyboard & Mouse Skills', activity: 'Typing exercises' },
+      { num: 5, topic: 'Introduction to the Internet', activity: 'Browse and search safely' },
+      { num: 6, topic: 'Introduction to Microsoft Word', activity: 'Create and format a document' },
+      { num: 7, topic: 'Introduction to Microsoft Excel', activity: 'Create a simple worksheet' },
+      { num: 8, topic: 'Introduction to Microsoft PowerPoint', activity: 'Design a presentation' },
+      { num: 9, topic: 'Email & Digital Communication', activity: 'Compose and send an email' },
+      { num: 10, topic: 'Digital Safety & Responsible Computing', activity: 'Identify online threats' },
+    ],
+    finalProject:
+      'Create a professionally formatted Word document, an Excel budget worksheet and a PowerPoint presentation.',
+  },
+  {
+    id: 'tier-2',
+    tier: 2,
+    title: 'Introduction to HTML & CSS',
+    subtitle: 'Web Foundations',
+    tagline: 'Building and styling web pages',
+    level: 'Beginner',
+    duration: '4–6 Weeks',
+    color: 'emerald',
+    icon: 'Code',
+    description:
+      'Learn the fundamentals of web development and create and style basic websites from scratch using HTML and CSS.',
+    objectives: [
+      'Understand how websites and the internet work',
+      'Write structured HTML documents',
+      'Create links, images, lists, tables and forms',
+      'Style web pages with CSS selectors and properties',
+      'Work with colours, backgrounds and typography',
+      'Build mobile-friendly responsive web pages',
+    ],
+    modules: [
+      { num: 1, topic: 'Understanding Websites & the Internet', activity: 'Explore website structures' },
+      { num: 2, topic: 'Introduction to HTML', activity: 'Create an HTML document' },
+      { num: 3, topic: 'HTML Headings & Paragraphs', activity: 'Build a simple information page' },
+      { num: 4, topic: 'Links & Images', activity: 'Create a linked photo page' },
+      { num: 5, topic: 'Lists & Tables', activity: 'Create a structured webpage' },
+      { num: 6, topic: 'HTML Forms', activity: 'Build a registration form' },
+      { num: 7, topic: 'Introduction to CSS', activity: 'Apply basic styles' },
+      { num: 8, topic: 'CSS Selectors & Properties', activity: 'Style headings and paragraphs' },
+      { num: 9, topic: 'Colours, Backgrounds & Typography', activity: 'Design a webpage' },
+      { num: 10, topic: 'Introduction to Responsive Design', activity: 'Create a mobile-friendly webpage' },
+    ],
+    finalProject:
+      'Build a personal portfolio website using HTML and CSS without relying on website builders.',
+  },
+  {
+    id: 'tier-3',
+    tier: 3,
+    title: 'Introduction to WordPress',
+    subtitle: 'Website Creation',
+    tagline: 'Website design, management and publishing',
+    level: 'Beginner',
+    duration: '4–6 Weeks',
+    color: 'purple',
+    icon: 'Globe',
+    description:
+      'Design, publish and manage professional websites using WordPress without advanced programming skills.',
+    objectives: [
+      'Understand what WordPress is and how it powers the web',
+      'Install and set up a WordPress site',
+      'Navigate the WordPress dashboard',
+      'Customise themes and design your website',
+      'Create pages, posts, menus and manage media',
+      'Install plugins and secure your website',
+    ],
+    modules: [
+      { num: 1, topic: 'Introduction to WordPress', activity: 'Explore WordPress websites' },
+      { num: 2, topic: 'WordPress Installation', activity: 'Set up a local WordPress site' },
+      { num: 3, topic: 'WordPress Dashboard', activity: 'Navigate the administration area' },
+      { num: 4, topic: 'Themes & Appearance', activity: 'Install and customise a theme' },
+      { num: 5, topic: 'Pages & Posts', activity: 'Create website content' },
+      { num: 6, topic: 'Menus & Navigation', activity: 'Design website navigation' },
+      { num: 7, topic: 'Plugins & Extensions', activity: 'Install useful plugins' },
+      { num: 8, topic: 'Media Management', activity: 'Upload and manage images' },
+      { num: 9, topic: 'Website Security & Backups', activity: 'Configure basic protection' },
+      { num: 10, topic: 'Publishing & Maintenance', activity: 'Publish a functional website' },
+    ],
+    finalProject:
+      'Design and publish a functional business, school, church or personal website.',
+  },
+  {
+    id: 'tier-4',
+    tier: 4,
+    title: 'Introduction to Artificial Intelligence',
+    subtitle: 'Future-Ready Skills',
+    tagline: 'AI literacy, productivity and creativity',
+    level: 'Beginner',
+    duration: '4–6 Weeks',
+    color: 'amber',
+    icon: 'Brain',
+    description:
+      'Discover artificial intelligence, generative AI tools and practical applications for education, business, creativity and problem-solving.',
+    objectives: [
+      'Understand what artificial intelligence is and how it works',
+      'Explore generative AI tools and their capabilities',
+      'Master prompt engineering for effective AI interaction',
+      'Use AI for learning, research and writing',
+      'Create images, presentations and designs with AI',
+      'Apply AI ethically and responsibly',
+    ],
+    modules: [
+      { num: 1, topic: 'Understanding Artificial Intelligence', activity: 'Identify everyday AI applications' },
+      { num: 2, topic: 'Introduction to Generative AI', activity: 'Explore AI tools' },
+      { num: 3, topic: 'Introduction to Prompt Engineering', activity: 'Write effective prompts' },
+      { num: 4, topic: 'AI for Learning & Research', activity: 'Develop a research outline' },
+      { num: 5, topic: 'AI for Writing & Communication', activity: 'Create professional content' },
+      { num: 6, topic: 'AI for Images & Graphic Design', activity: 'Generate a creative design' },
+      { num: 7, topic: 'AI for Presentations', activity: 'Develop a presentation' },
+      { num: 8, topic: 'AI for Business & Entrepreneurship', activity: 'Develop a business idea' },
+      { num: 9, topic: 'AI Ethics & Responsible Use', activity: 'Examine bias, privacy and misinformation' },
+      { num: 10, topic: 'Building Practical Solutions with AI', activity: 'Develop an AI-assisted project' },
+    ],
+    finalProject:
+      'Develop an AI-assisted solution to a real-life educational, business or community problem.',
+  },
+];
+
+export const faqs = [
+  {
+    q: 'Who can enrol at CCYI Digital Academy?',
+    a: 'Anyone eager to learn digital skills — students, professionals, entrepreneurs and lifelong learners of all ages.',
+  },
+  {
+    q: 'Do I need prior experience?',
+    a: 'No. All tiers start at beginner level. Tier 1 assumes no prior computer experience.',
+  },
+  {
+    q: 'How long does each tier take?',
+    a: 'Each tier is designed to be completed in 4–6 weeks with consistent study.',
+  },
+  {
+    q: 'Will I receive a certificate?',
+    a: 'Yes. You will receive a CCYI Digital Academy certificate upon successful completion of each tier.',
+  },
+  {
+    q: 'Can I take tiers out of order?',
+    a: 'We recommend progressing sequentially, but learners with prior experience may request to start at a higher tier.',
+  },
+  {
+    q: 'What learning mode is available?',
+    a: 'Courses are delivered online through our Moodle learning platform. Blended and physical options may be available for select cohorts.',
+  },
+  {
+    q: 'How are courses assessed?',
+    a: 'Each tier includes module quizzes, practical assignments and a final capstone project. A minimum of 60% is required to progress.',
+  },
+];
+
+export const stats = [
+  { value: '4', label: 'Learning Tiers' },
+  { value: '40', label: 'Course Modules' },
+  { value: '100%', label: 'Practical' },
+  { value: '∞', label: 'Possibilities' },
+];
