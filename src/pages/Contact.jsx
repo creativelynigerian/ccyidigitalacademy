@@ -34,16 +34,22 @@ export default function Contact() {
               <div className="space-y-4">
                 {[
                   {
-                    icon: Mail,
-                    title: 'Email',
-                    value: 'info@ccyiglobalentwebng.com.ng',
-                    href: 'mailto:info@ccyiglobalentwebng.com.ng',
+                    icon: Phone,
+                    title: 'Phone',
+                    value: '07018327654',
+                    href: 'tel:07018327654',
                   },
                   {
                     icon: MessageCircle,
                     title: 'WhatsApp',
-                    value: '+234 701 832 7654',
+                    value: '07018327654',
                     href: 'https://wa.me/2347018327654',
+                  },
+                  {
+                    icon: Mail,
+                    title: 'Email',
+                    value: 'ccyiglobalacademy@gmail.com',
+                    href: 'mailto:ccyiglobalacademy@gmail.com',
                   },
                   {
                     icon: ExternalLink,

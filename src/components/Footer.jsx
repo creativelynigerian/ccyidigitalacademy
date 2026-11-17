@@ -89,6 +89,12 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Connect & Learn</h3>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
+                <Phone className="w-4 h-4 mt-0.5 text-blue-400 shrink-0" />
+                <a href="tel:07018327654" className="hover:text-white transition-colors">
+                  07018327654
+                </a>
+              </li>
+              <li className="flex items-start gap-2">
                 <MessageCircle className="w-4 h-4 mt-0.5 text-green-400 shrink-0" />
                 <a
                   href="https://wa.me/2347018327654"
@@ -96,13 +102,13 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
                 >
-                  WhatsApp: +234 701 832 7654
+                  WhatsApp: 07018327654
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 text-blue-400 shrink-0" />
-                <a href="mailto:info@ccyiglobalentwebng.com.ng" className="hover:text-white transition-colors">
-                  info@ccyiglobalentwebng.com.ng
+                <a href="mailto:ccyiglobalacademy@gmail.com" className="hover:text-white transition-colors">
+                  ccyiglobalacademy@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-2">
