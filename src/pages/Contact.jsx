@@ -42,12 +42,18 @@ export default function Contact() {
                   {
                     icon: MessageCircle,
                     title: 'WhatsApp',
-                    value: 'Chat with us on WhatsApp',
-                    href: 'https://wa.me/2348000000000',
+                    value: '+234 701 832 7654',
+                    href: 'https://wa.me/2347018327654',
                   },
                   {
                     icon: ExternalLink,
-                    title: 'Website',
+                    title: 'Student Portal (Moodle LMS)',
+                    value: 'ccyiglobalentwebng.com.ng/lms',
+                    href: 'https://ccyiglobalentwebng.com.ng/lms',
+                  },
+                  {
+                    icon: ExternalLink,
+                    title: 'Main Website',
                     value: 'ccyiglobalentwebng.com.ng',
                     href: 'https://ccyiglobalentwebng.com.ng',
                   },

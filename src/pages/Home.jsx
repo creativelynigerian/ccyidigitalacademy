@@ -25,35 +25,63 @@ export default function Home() {
           <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400 rounded-full blur-3xl" />
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-indigo-400 rounded-full blur-3xl" />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 rounded-full px-4 py-1.5 text-sm mb-6">
-              <Sparkles className="w-4 h-4 text-amber-400" />
-              <span>CCYI Digital Academy</span>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div className="lg:col-span-8">
+              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 rounded-full px-4 py-1.5 text-sm mb-6">
+                <Sparkles className="w-4 h-4 text-amber-400" />
+                <span>CCYI Digital Academy &bull; Moodle Powered</span>
+              </div>
+              <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                Your Digital Future{' '}
+                <span className="bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">
+                  Begins Here.
+                </span>
+              </h1>
+              <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl leading-relaxed">
+                Learn essential digital skills, build websites, master productivity tools and
+                discover the possibilities of Artificial Intelligence.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <Link
+                  to="/courses"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-white text-blue-900 rounded-xl font-semibold hover:bg-blue-50 shadow-lg hover:shadow-xl transition-all"
+                >
+                  Explore Courses <ArrowRight className="w-5 h-5" />
+                </Link>
+                <Link
+                  to="/admissions"
+                  className="inline-flex items-center gap-2 px-6 py-3 border-2 border-white/30 text-white rounded-xl font-semibold hover:bg-white/10 transition-all"
+                >
+                  Apply Now
+                </Link>
+                <a
+                  href="https://ccyiglobalentwebng.com.ng/lms"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-amber-500 hover:bg-amber-600 text-gray-950 font-bold rounded-xl shadow-lg transition-all"
+                >
+                  Student Portal (LMS)
+                </a>
+              </div>
             </div>
-            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-              Your Digital Future{' '}
-              <span className="bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">
-                Begins Here.
-              </span>
-            </h1>
-            <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl leading-relaxed">
-              Learn essential digital skills, build websites, master productivity tools and
-              discover the possibilities of Artificial Intelligence.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Link
-                to="/courses"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-blue-900 rounded-xl font-semibold hover:bg-blue-50 shadow-lg hover:shadow-xl transition-all"
-              >
-                Explore Courses <ArrowRight className="w-5 h-5" />
-              </Link>
-              <Link
-                to="/admissions"
-                className="inline-flex items-center gap-2 px-6 py-3 border-2 border-white/30 text-white rounded-xl font-semibold hover:bg-white/10 transition-all"
-              >
-                Apply Now
-              </Link>
+
+            <div className="lg:col-span-4 flex justify-center">
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-amber-400 to-orange-500 rounded-full blur-xl opacity-70 group-hover:opacity-100 transition duration-500"></div>
+                <div className="relative bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-white/20 shadow-2xl flex flex-col items-center">
+                  <img
+                    src="/logo.png"
+                    alt="CCYI Digital Academy"
+                    className="w-52 h-52 sm:w-60 sm:h-60 object-contain drop-shadow-xl"
+                  />
+                  <div className="mt-3 text-center">
+                    <span className="text-xs uppercase tracking-widest font-semibold text-amber-300">
+                      Learn • Create • Innovate • Transform
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -231,7 +259,7 @@ export default function Home() {
               Apply Now
             </Link>
             <a
-              href="https://wa.me/2348000000000"
+              href="https://wa.me/2347018327654"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 border-2 border-white/30 text-white rounded-xl font-semibold hover:bg-white/10 transition-all"

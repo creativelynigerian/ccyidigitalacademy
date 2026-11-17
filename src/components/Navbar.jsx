@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Menu, X, GraduationCap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const navLinks = [
   { to: '/', label: 'Home' },
@@ -20,9 +20,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
-              <GraduationCap className="w-6 h-6 text-white" />
-            </div>
+            <img
+              src="/logo.png"
+              alt="CCYI Digital Academy"
+              className="w-11 h-11 object-contain group-hover:scale-105 transition-transform"
+            />
             <div className="leading-tight">
               <span className="block text-lg font-bold text-gray-900 tracking-tight">CCYI</span>
               <span className="block text-[10px] font-semibold text-blue-600 tracking-widest uppercase">
@@ -49,7 +51,7 @@ export default function Navbar() {
               </NavLink>
             ))}
             <a
-              href="https://ccyiglobalentwebng.com.ng"
+              href="https://ccyiglobalentwebng.com.ng/lms"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg text-sm font-semibold hover:from-blue-700 hover:to-indigo-700 shadow-md hover:shadow-lg transition-all"
@@ -89,7 +91,7 @@ export default function Navbar() {
             </NavLink>
           ))}
           <a
-            href="https://ccyiglobalentwebng.com.ng"
+            href="https://ccyiglobalentwebng.com.ng/lms"
             target="_blank"
             rel="noopener noreferrer"
             className="block mt-2 text-center px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg text-sm font-semibold"

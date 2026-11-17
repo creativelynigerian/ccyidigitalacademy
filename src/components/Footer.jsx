@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { GraduationCap, Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
+import { Mail, Phone, MapPin, ExternalLink, MessageCircle } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -8,10 +8,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center">
-                <GraduationCap className="w-6 h-6 text-white" />
-              </div>
+            <div className="flex items-center gap-3 mb-4">
+              <img
+                src="/logo.png"
+                alt="CCYI Digital Academy"
+                className="w-12 h-12 object-contain rounded-full bg-white/5 p-1"
+              />
               <div className="leading-tight">
                 <span className="block text-lg font-bold text-white">CCYI</span>
                 <span className="block text-[10px] font-semibold text-blue-400 tracking-widest uppercase">
@@ -82,10 +84,21 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact & LMS */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Contact</h3>
+            <h3 className="text-white font-semibold mb-4">Connect & Learn</h3>
             <ul className="space-y-3 text-sm">
+              <li className="flex items-start gap-2">
+                <MessageCircle className="w-4 h-4 mt-0.5 text-green-400 shrink-0" />
+                <a
+                  href="https://wa.me/2347018327654"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  WhatsApp: +234 701 832 7654
+                </a>
+              </li>
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 text-blue-400 shrink-0" />
                 <a href="mailto:info@ccyiglobalentwebng.com.ng" className="hover:text-white transition-colors">
@@ -93,19 +106,19 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 mt-0.5 text-blue-400 shrink-0" />
-                <span>Nigeria</span>
-              </li>
-              <li className="flex items-start gap-2">
                 <ExternalLink className="w-4 h-4 mt-0.5 text-blue-400 shrink-0" />
                 <a
-                  href="https://ccyiglobalentwebng.com.ng"
+                  href="https://ccyiglobalentwebng.com.ng/lms"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
+                  className="text-amber-400 hover:text-amber-300 font-medium transition-colors"
                 >
-                  ccyiglobalentwebng.com.ng
+                  Student Portal (LMS)
                 </a>
+              </li>
+              <li className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 mt-0.5 text-blue-400 shrink-0" />
+                <span>Nigeria</span>
               </li>
             </ul>
           </div>
