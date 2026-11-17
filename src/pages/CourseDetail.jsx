@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { courses } from '../data/courses';
-import { Monitor, Code, Globe, Brain, ArrowRight, ArrowLeft, CheckCircle2, BookOpen } from 'lucide-react';
+import { Monitor, Code, Globe, Brain, ArrowRight, ArrowLeft, CheckCircle2, BookOpen, CreditCard } from 'lucide-react';
+import PaymentModal from '../components/PaymentModal';
 
 const iconMap = { Monitor, Code, Globe, Brain };
 
@@ -37,6 +39,7 @@ const tierColorMap = {
 
 export default function CourseDetail() {
   const { courseId } = useParams();
+  const [payModalOpen, setPayModalOpen] = useState(false);
   const course = courses.find((c) => c.id === courseId);
 
   if (!course) return <Navigate to="/courses" replace />;
@@ -134,7 +137,17 @@ export default function CourseDetail() {
           {/* Sidebar */}
           <div className="space-y-6">
             <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm sticky top-24">
-              <h3 className="font-bold text-gray-900 mb-4">Enrol in This Course</h3>
+              <div className="flex items-center justify-between mb-4 pb-4 border-b border-gray-100">
+                <div>
+                  <span className="text-xs text-gray-500 font-medium">Tuition Fee</span>
+                  <p className="text-2xl font-black text-gray-900">{course.priceFormatted}</p>
+                </div>
+                <span className="text-xs bg-emerald-100 text-emerald-800 font-bold px-2.5 py-1 rounded-full">
+                  Paystack Verified
+                </span>
+              </div>
+
+              <h3 className="font-bold text-gray-900 mb-3">Course Includes:</h3>
               <ul className="space-y-2 text-sm text-gray-600 mb-6">
                 <li>✓ 10 comprehensive modules</li>
                 <li>✓ Hands-on practical activities</li>
@@ -142,12 +155,23 @@ export default function CourseDetail() {
                 <li>✓ Capstone project</li>
                 <li>✓ CCYI Digital Academy certificate</li>
               </ul>
-              <Link
-                to="/admissions"
-                className={`block text-center w-full px-6 py-3 bg-gradient-to-r ${c.btn} text-white rounded-xl font-semibold hover:shadow-lg transition-all`}
-              >
-                Apply Now
-              </Link>
+
+              <div className="space-y-3">
+                <button
+                  type="button"
+                  onClick={() => setPayModalOpen(true)}
+                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white rounded-xl font-bold shadow-lg hover:shadow-xl transition-all"
+                >
+                  <CreditCard className="w-4 h-4" /> Pay {course.priceFormatted} Online
+                </button>
+
+                <Link
+                  to="/admissions"
+                  className={`block text-center w-full px-6 py-3 border border-gray-300 text-gray-700 rounded-xl font-semibold hover:bg-gray-50 transition-all text-sm`}
+                >
+                  Apply &amp; Register First
+                </Link>
+              </div>
 
               {/* Nav */}
               <div className="mt-6 pt-6 border-t border-gray-100 flex flex-col gap-2 text-sm">
@@ -172,6 +196,12 @@ export default function CourseDetail() {
           </div>
         </div>
       </div>
+
+      <PaymentModal
+        course={course}
+        isOpen={payModalOpen}
+        onClose={() => setPayModalOpen(false)}
+      />
     </div>
   );
 }

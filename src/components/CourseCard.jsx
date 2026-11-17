@@ -51,10 +51,14 @@ export default function CourseCard({ course }) {
       </h3>
       <p className="text-sm text-gray-500 mb-3">{course.tagline}</p>
 
-      <div className="flex items-center gap-3 text-xs text-gray-400">
-        <span className="bg-gray-100 px-2 py-1 rounded">{course.level}</span>
-        <span className="bg-gray-100 px-2 py-1 rounded">{course.duration}</span>
-        <span className="bg-gray-100 px-2 py-1 rounded">10 Modules</span>
+      <div className="flex items-center justify-between pt-3 border-t border-gray-100 mt-3 text-xs">
+        <div className="flex items-center gap-2 text-gray-500">
+          <span className="bg-gray-100 px-2 py-0.5 rounded">{course.duration}</span>
+          <span className="bg-gray-100 px-2 py-0.5 rounded">10 Modules</span>
+        </div>
+        <span className="font-extrabold text-gray-900 text-sm bg-gray-50 px-2.5 py-1 rounded-lg border border-gray-200">
+          {course.priceFormatted}
+        </span>
       </div>
     </Link>
   );

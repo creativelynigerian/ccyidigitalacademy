@@ -7,6 +7,8 @@ export const courses = [
     tagline: 'Digital literacy and office productivity',
     level: 'Beginner',
     duration: '4–6 Weeks',
+    price: 15000,
+    priceFormatted: '₦15,000',
     color: 'blue',
     icon: 'Monitor',
     description:
@@ -42,6 +44,8 @@ export const courses = [
     tagline: 'Building and styling web pages',
     level: 'Beginner',
     duration: '4–6 Weeks',
+    price: 25000,
+    priceFormatted: '₦25,000',
     color: 'emerald',
     icon: 'Code',
     description:
@@ -77,6 +81,8 @@ export const courses = [
     tagline: 'Website design, management and publishing',
     level: 'Beginner',
     duration: '4–6 Weeks',
+    price: 30000,
+    priceFormatted: '₦30,000',
     color: 'purple',
     icon: 'Globe',
     description:
@@ -112,6 +118,8 @@ export const courses = [
     tagline: 'AI literacy, productivity and creativity',
     level: 'Beginner',
     duration: '4–6 Weeks',
+    price: 35000,
+    priceFormatted: '₦35,000',
     color: 'amber',
     icon: 'Brain',
     description:
