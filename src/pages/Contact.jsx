@@ -60,8 +60,8 @@ export default function Contact() {
                   {
                     icon: ExternalLink,
                     title: 'Main Website',
-                    value: 'ccyiglobalentwebng.com.ng',
-                    href: 'https://ccyiglobalentwebng.com.ng',
+                    value: 'academy.ccyiglobalentwebng.com.ng',
+                    href: 'https://academy.ccyiglobalentwebng.com.ng',
                   },
                   {
                     icon: MapPin,

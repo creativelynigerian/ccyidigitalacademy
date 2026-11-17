@@ -27,7 +27,7 @@ export default function Footer() {
             <p className="text-xs text-gray-500 mt-3">
               A programme of{' '}
               <a
-                href="https://ccyiglobalentwebng.com.ng"
+                href="https://academy.ccyiglobalentwebng.com.ng"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:text-blue-300"
