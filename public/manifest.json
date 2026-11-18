@@ -1,0 +1,23 @@
+{
+  "short_name": "CCYI Academy",
+  "name": "CCYI Digital Academy",
+  "description": "Learn essential digital skills, build websites, master productivity tools and discover Artificial Intelligence.",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#030712",
+  "theme_color": "#1d4ed8",
+  "display": "standalone",
+  "orientation": "portrait"
+}
